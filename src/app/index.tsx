@@ -9,6 +9,8 @@ import { ThemedView } from '@/components/themed-view';
 import { WebBadge } from '@/components/web-badge';
 import { BottomTabInset, MaxContentWidth, Spacing } from '@/constants/theme';
 
+
+
 function getDevMenuHint() {
   if (Platform.OS === 'web') {
     return <ThemedText type="small">use browser devtools</ThemedText>;
@@ -43,7 +45,7 @@ export default function HomeScreen() {
           get started
         </ThemedText>
 
-        <Text className='text-green'>Haikal</Text>
+        <Text className='text-green-500'>Haikal</Text>
 
         <ThemedView type="backgroundElement" style={styles.stepContainer}>
           <HintRow
