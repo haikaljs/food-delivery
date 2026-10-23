@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
-  "dev": "ts-node-dev --respawn --transpile-only --exit-child src/app.ts",
-  "build": "prisma generate && tsc",
-  "start": "node dist/app.js",
-  "db:migrate": "prisma migrate dev",
-  "db:push": "prisma db push",
-  "db:studio": "prisma studio",
-  "db:generate": "prisma generate",
-  "db:seed": "prisma db seed"
-},
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --exit-child src/app.ts",
+    "build": "prisma generate && tsc",
+    "start": "node dist/app.js",
+    "db:migrate": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "db:generate": "prisma generate",
+    "db:seed": "prisma db seed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -51,6 +51,6 @@
     "prisma": "^7.10.1",
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.4.5"
+    "typescript": "^6.0.3"
   }
 }
