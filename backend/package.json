@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "dev": "ts-node-dev --respawn --transpile-only --exit-child src/app.ts",
+  "build": "prisma generate && tsc",
+  "start": "node dist/app.js",
+  "db:migrate": "prisma migrate dev",
+  "db:push": "prisma db push",
+  "db:studio": "prisma studio",
+  "db:generate": "prisma generate",
+  "db:seed": "prisma db seed"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
